@@ -3,24 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>影片详情 - 日韩影视网</title>
-  <meta name="description" content="日韩影视网影片详情。">
+  <title>热播榜 - 日韩影视网</title>
+  <meta name="description" content="日韩影视网热播榜，整理近期热度较高的日韩影视内容。">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-page="detail">
+<body data-page="ranking">
   <header class="site-header">
     <a class="brand" href="index.html"><span class="brand-mark">映</span><span>日韩影视网</span></a>
     <button class="menu-button" type="button" data-menu-toggle aria-label="打开导航">☰</button>
     <nav class="site-nav" data-site-nav>
-      <a href="index.html">首页</a><a href="movies.html">全部影片</a><a href="categories.html">分类频道</a><a href="ranking.html">热播榜</a><a href="search.html">搜索</a><a href="service.html">服务支持</a>
+      <a href="index.html">首页</a><a href="movies.html">全部影片</a><a href="categories.html">分类频道</a><a class="is-active" href="ranking.html">热播榜</a><a href="search.html">搜索</a><a href="service.html">服务支持</a>
     </nav>
   </header>
   <main>
-    <section class="detail-shell" data-render="detail"></section>
-    <section class="section">
-      <div class="section-head"><div><span>Related</span><h2>相关推荐</h2></div><a href="movies.html">返回片库</a></div>
-      <div class="poster-grid" data-render="featured"></div>
-    </section>
+    <section class="page-hero"><span>Ranking</span><h1>热播榜入口</h1><p>按热度、评分与更新状态整理近期更受关注的日韩影视内容。</p></section>
+    <section class="ranking-list" data-render="ranking"></section>
   </main>
   <footer class="site-footer compact"><p>© 2026 日韩影视网. 影视信息整理与推荐。</p></footer>
   <script src="assets/js/app.js"></script>
