@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN" data-framework="library">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>全部内容 - 映栈剧场</title>
+  <meta name="description" content="浏览全部影视内容，支持按分类、地区、年份与关键词查找。">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="movies">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">映</span><span class="brand-name">映栈剧场</span></a>
+    <button class="menu-button" type="button" data-menu-toggle aria-label="打开导航">☰</button>
+    <nav class="site-nav" data-site-nav>
+      <a href="index.html">首页</a><a class="is-active" href="movies.html">全部内容</a><a href="categories.html">分类频道</a><a href="updates.html">最新更新</a><a href="search.html">搜索</a><a href="about.html">关于</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-title">
+      <span class="eyebrow">Library</span>
+      <h1>全部内容</h1>
+      <p>母版默认放少量示例数据，后续批量生成时替换 `assets/js/app.js` 里的内容即可。</p>
+    </section>
+    <section class="tool-panel">
+      <input type="search" data-filter-input placeholder="搜索标题、类型、地区">
+      <div class="chip-row" data-render="categoryFilters"></div>
+    </section>
+    <section class="poster-grid" data-render="allMovies"></section>
+  </main>
+  <footer class="site-footer"><p>© 2026 映栈剧场.</p><div><a href="about.html">关于</a><a href="search.html">搜索</a></div></footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+

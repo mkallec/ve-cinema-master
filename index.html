@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN" data-framework="magazine">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>映栈剧场 - 日剧韩剧电影推荐与片库</title>
+  <meta name="description" content="映栈剧场整理日剧、韩剧、日本电影、韩国电影与综艺内容，提供分类浏览、最新更新、热门推荐和片单专题。">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="映栈剧场">
+      <span class="brand-mark">映</span>
+      <span class="brand-name">映栈剧场</span>
+    </a>
+    <button class="menu-button" type="button" data-menu-toggle aria-label="打开导航">☰</button>
+    <nav class="site-nav" data-site-nav>
+      <a class="is-active" href="index.html">首页</a>
+      <a href="movies.html">全部内容</a>
+      <a href="categories.html">分类频道</a>
+      <a href="updates.html">最新更新</a>
+      <a href="search.html">搜索</a>
+      <a href="about.html">关于</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-layout">
+      <article class="hero-card is-large">
+        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1400&q=80" alt="影院座位与银幕">
+        <div class="hero-copy">
+          <span class="eyebrow">本周推荐</span>
+          <h1>清爽的影视片库母版</h1>
+          <p>适合 Vercel 静态部署，首页、片库、分类、更新、搜索和详情页都已经准备好。</p>
+          <a class="button" href="movies.html">浏览片库</a>
+        </div>
+      </article>
+      <aside class="hero-stack">
+        <div class="metric"><strong>5</strong><span>可替换框架</span></div>
+        <div class="metric"><strong>7</strong><span>基础页面</span></div>
+        <div class="metric"><strong>静态</strong><span>适配 Vercel</span></div>
+      </aside>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">精选内容</span>
+          <h2>热门推荐</h2>
+        </div>
+        <a href="movies.html">全部内容</a>
+      </div>
+      <div class="poster-grid" data-render="featured"></div>
+    </section>
+
+    <section class="section-block split-band">
+      <div>
+        <span class="eyebrow">分类入口</span>
+        <h2>按频道快速浏览</h2>
+      </div>
+      <div class="category-grid" data-render="categories"></div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">最近整理</span>
+          <h2>最新更新</h2>
+        </div>
+        <a href="updates.html">查看更新</a>
+      </div>
+      <div class="update-list" data-render="updates"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 映栈剧场. 本站为影视信息整理与推荐模板，内容名称可按项目替换。</p>
+    <div><a href="about.html">关于本站</a><a href="about.html#notice">免责声明</a></div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+

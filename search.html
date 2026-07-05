@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN" data-framework="simple">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索 - 映栈剧场</title>
+  <meta name="description" content="搜索影视标题、地区、类型与年份。">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="search">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">映</span><span class="brand-name">映栈剧场</span></a>
+    <button class="menu-button" type="button" data-menu-toggle aria-label="打开导航">☰</button>
+    <nav class="site-nav" data-site-nav>
+      <a href="index.html">首页</a><a href="movies.html">全部内容</a><a href="categories.html">分类频道</a><a href="updates.html">最新更新</a><a class="is-active" href="search.html">搜索</a><a href="about.html">关于</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-title">
+      <span class="eyebrow">Search</span>
+      <h1>搜索内容</h1>
+      <p>输入关键词后即时筛选，适合静态站使用。</p>
+    </section>
+    <section class="tool-panel">
+      <input type="search" data-filter-input placeholder="输入关键词，例如 韩剧、悬疑、2025">
+    </section>
+    <section class="poster-grid" data-render="allMovies"></section>
+  </main>
+  <footer class="site-footer"><p>© 2026 映栈剧场.</p><div><a href="about.html">免责声明</a></div></footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
